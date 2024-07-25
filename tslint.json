@@ -1,0 +1,56 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "rules": {
+    "eofline": true,
+    "no-empty-interface": false,
+    "prettier": [
+      "warn",
+      {
+        "endOfLine": "lf"
+      }
+    ],
+
+    "prefer-switch": [true, { "min-cases": 2 }],
+    "interface-name": [true, "always-prefix"],
+    "prefer-for-of": false,
+    "only-arrow-functions": true,
+    "no-unused-expression": false,
+    "no-implicit-dependencies": [true, "dev"],
+    "max-line-length": {
+      "options": [120]
+    },
+    "jsx-no-lambda": false,
+    "new-parens": true,
+    "no-arg": true,
+    "no-bitwise": false,
+    "no-conditional-assignment": true,
+    "no-consecutive-blank-lines": false,
+    "no-console": false,
+    "variable-name": {
+      "options": ["ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"]
+    },
+    "no-empty": [true, "allow-empty-catch", "allow-empty-functions"],
+    "prefer-method-signature": true,
+    "prefer-function-over-method": [true, "allow-public", "allow-protected"],
+    "no-duplicate-imports": [true, { "allow-namespace-imports": true }],
+    "max-classes-per-file": [true, 1],
+    "max-file-line-count": [true, 1500],
+    "prefer-const": true,
+    "no-eval": true,
+    "triple-equals": [true, "allow-null-check", "allow-undefined-check"],
+    "array-type": [true, "generic"],
+    "arrow-return-shorthand": true,
+    "class-name": true,
+    "static-this": true,
+    "one-variable-per-declaration": true,
+    "no-sparse-arrays": true
+  }
+}
